@@ -1,7 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
 #pragma once
 
-void chislo(char* out, char* mass, char* judge);
+struct storage{
+	double x;
+        double y;
+        double r;
+        int sum;
+};
+
+void chislo(char* out, char* mass, char* judge, struct storage *store);
 void separator(
         char* inp,
         char* sample,
@@ -9,4 +19,5 @@ void separator(
         char* x,
         char* y,
         char* r,
-        char* judge);
+        char* judge,
+        struct storage *store);
