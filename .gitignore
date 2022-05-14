@@ -1,2 +1,6 @@
 *.bak
+*.a
+*.d
+*.o
+bin/geometry
 trpop
