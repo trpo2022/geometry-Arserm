@@ -2,5 +2,6 @@
 *.a
 *.d
 *.o
+bin/test
 bin/geometry
 trpop
