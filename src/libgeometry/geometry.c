@@ -6,6 +6,10 @@
 
 #include "geometry.h"
 
+int sum(int a, int b)
+{
+    return a+b;
+}
 void separator(
         char *inp,
         char *sample,
@@ -24,13 +28,16 @@ void separator(
     int traitor = 0;
     int exit = 0;
 
+
     for (size_t i = 0; i < strlen(inp); i++) {
         if (inp[i] != ' ')
             break;
         else
             step = i + 1;
     }
+
     indicator = step;
+
     for (size_t i = step; i < strlen(inp); i++) {
         step = i;
         if ((inp[i] == ' ') || (inp[i] == '(') || (inp[i] == '('))
@@ -186,7 +193,7 @@ void chislo(char* out, char* mass, char* judge, struct storage *store)
     size_t a = 0;
     
     double number = 0;
-    //printf("----%s----\n", out);
+    printf("----%s----\n", out);
 
     for (size_t i = 0; i < strlen(out); i++) {
         if (out[i] == '.')
